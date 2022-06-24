@@ -414,5 +414,16 @@ a los titulos y textos */
     }
 
     /*------ Fin del Media queries -------*/
+}
 
+/*------- Animaciones y Transiciones --------*/
+
+.cabecera{
+    background-image: linear-gradient(to right, black,violet);
+}
+.pie{
+    background-image: linear-gradient(to right, violet,black);
+}
+img:hover {
+    transform: scale(1.2,1.4);  
 }
