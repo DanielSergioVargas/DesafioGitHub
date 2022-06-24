@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*------Clases de la pagina index ------*/
+.cabecera {
+    background-color: white;
+    height: 10vh;  
+    position: sticky;
+    top: 0; 
+}
+
+.cabecera__lista{
+    list-style-type: none;
+    height: fit-content;
+    padding-top: 25px;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 500px;
+}
+
+.cabecera__lista__item {
+    display: inline;
+    padding: 30px;
+    text-align: center;
+}
+/*Clase para los titulos de las paginas*/
+.titulos {
+    margin: 10px;
+    width: fit-content;
+    color: white;
+    padding: 20px 0px 0px 50px;
+}
+
+.estilos {
+    margin: 0;
+    /*padding: 10px 10px 10px 10px;*/
+    width: 100%;
+    height: 500px;
+}
+/*Etiqueta para dar estilo en el menu de las paginas*/
+a {
+    text-decoration: none;
+    font-family: 'Nuosu SIL', serif;
+    text-align: center;
+    color: black;
+    margin: 10px;
+}
+/*Clase para las imagenes de galeria*/
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.fotos img {
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    
+}
+/* Clase del footer para todas las paginas*/
+.pie{
+    background-color: white;
+    height: 10vh;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Clase para todos los textos que haya en las pags*/
+.texto {
+    margin: 10px;
+    width: 50%;
+    padding: 10px;
+    font-family: 'Nuosu SIL', serif;
+    display: inline-block;
+    color: white;
+}
+
+.apartado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.apartado img{
+    margin: 10px;
+    padding: 0%;
+    height: auto;
+    width: 420px;
+}
+/*--------------------------------------------------*/
+.texto2 {
+    margin: 10px;
+    width: 85%;
+    padding: 10px;
+    font-family: 'Nuosu SIL', serif;
+    color: white;
+}
+
+/* Clases para centrado de texto*/
+.centrado{
+    text-align: center;   
+}
+
+.piepagina {
+    text-align: center;   
+}
+/*Etiqueta para dar color al body*/
+body {
+    background-color: black;
+}
+/*----------------------------------------------*/
+
+
+/* ---------- Equipamineto -----------*/
+.imagenequip {
+    width: 100%;
+    height: 150px;
+}
+/*Clase para dar estilo al titulo y al texto*/
+.equip h1 {
+    text-align: center;
+    margin: 10px;
+    padding: 20px 0px 0px 10px;
+    color: white;
+    
+}
+.equip p {
+    color: black;
+    text-align: center;
+    padding: 0px 30px;
+    color: white;
+}
+
+/* --- Clases para las listas con sus respectivos estilos
+a los titulos y textos */
+.listado{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 2%;
+}
+
+.listado ul{
+    padding-left: 40px;
+}
+
+.listado h2{
+    color: white;
+}
+.listado li{
+    list-style-type: none;
+    color: white;
+}
+.listado img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.segundaseccion{
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 2%;
+}
+
+.segundaseccion ul{
+    padding-left: 40px;
+}
+.segundaseccion h2{
+    color: white;
+}
+.segundaseccion li{
+    list-style-type: none;
+    color: white;
+}
+.segundaseccion img{
+    width: 250px;
+}
+/*--------------------------------------*/
+
+/*------Clases Contacto-------*/
+.info {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    display: inline-block;
+}
+
+.info h4 {
+    font-family: 'Nuosu SIL', serif;
+    height: 40px;
+    text-align: left;
+    color: white;
+}
+
+.info p a {
+     color: blue;
+     width: 50px;
+     padding: 0px 10px 0px 0px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.redes a{
+    color: white;
+}
+/*----------------------------------------/
+
+/* Grid para la pagina index*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1% 500px 400px 400px 1fr 1%; 
+
+    grid-template-areas: 
+    'cabecera'
+    'imagenprincipal'
+    'estudioA'
+    'estudioB'
+    'galeria'
+    'pie';
+}
+
+.cabecera {
+     grid-area: cabecera; 
+    }
+.imagenprincipal { 
+    grid-area: imagenprincipal; 
+}
+.estudioA { 
+    grid-area: estudioA; 
+}
+.estudioB { 
+    grid-area: estudioB; 
+}
+.galeria { 
+    grid-area: galeria; 
+}
+.pie {
+     grid-area: pie;
+}
+
+
+
+/*Grid para la seccion Contacto*/
+.grid-container{
+    display: grid; 
+    grid-template-columns: 55% 1fr; 
+    grid-template-rows: 0.3fr 2.4fr 1fr 0.3fr; 
+    gap: 3px 3px;  
+    grid-template-areas: 
+      "cabecera cabecera"
+      "datoscontacto mapa"
+      "redes redes"
+      "pie pie"; 
+}
+.cabecera{
+    grid-area: cabecera;
+}
+.datoscontacto{
+    grid-area: datoscontacto;
+}
+.mapa{
+    grid-area: mapa;
+}
+.redes{
+    grid-area: redes;
+}
+.pie{
+    grid-area: pie;
+}
+/* ----------------------------------- */
+
+
+/*-------Media Queries--------*/
+
+/*Mobile para la pagina Contacto*/
+
+@media only screen and (max-width: 500px){
+    body{
+        background-color: bisque;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-rows: 0.3fr 1.2fr 2.6fr 0.6fr 0.3fr; 
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        'cabecera cabecera'
+        'datoscontacto datoscontacto'
+        'mapa mapa'
+        'redes redes'
+        'pie pie';
+    }
+
+    .cabecera{
+        grid-area: cabecera;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecera__lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5px;
+        padding-left: 0px;
+        flex-wrap: wrap;
+    }
+    .cabecera__lista__item a{
+        color: white;
+    }
+    .cabecera__lista__item{
+        padding: 0px;
+    }
+    .datoscontacto{
+        grid-area: datoscontacto;
+        display: flex;
+        flex-direction: row;
+    }
+    .mapa{
+        grid-area: mapa;
+        display: flex;
+        object-fit: cover;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .pie{
+        grid-area: pie;
+        background-color: black;
+    }
+    .piepagina{
+        color: white;
+    }
+    .redes a{
+        color: black;
+    }
+    .info h4{
+        color: black;
+    }
+    .titulos{
+        color: black;
+        padding-left: 170px;
+    }
+
+   
+   
+    /*-Mobile para el index*/
+    .container{
+        display: grid;
+        grid-template-rows:  0fr 0fr 0fr 0fr 1fr 0fr;   
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 
+        'cabecera'
+        'imagenprincipal'
+        'estudioA'
+        'estudioB'
+        'galeria'
+        'pie';
+    }
+    .cabecera{
+        grid-area: cabecera;  
+    }
+    .imagenprincipal{
+        grid-area: imagenprincipal;
+        display: flex;
+    }
+    .estudioA{
+        grid-area: estudioA;
+    }
+    .apartado{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .estudioB{
+        grid-area: estudioB;
+    }
+    .galeria{
+        grid-area: galeria;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .pie{
+        grid-area: pie;
+    }
+    .texto{
+        width: fit-content;
+        height: auto;
+        text-align: center;
+        color: black;
+    }
+
+    /*------ Fin del Media queries -------*/
+
+}
