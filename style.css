@@ -45,6 +45,7 @@ a {
     text-align: center;
     color: black;
     margin: 10px;
+    font-size: large;
 }
 /*Clase para las imagenes de galeria*/
 
@@ -107,7 +108,8 @@ a {
 }
 
 .piepagina {
-    text-align: center;   
+    text-align: center;  
+    font-size: large; 
 }
 /*Etiqueta para dar color al body*/
 body {
@@ -424,6 +426,31 @@ a los titulos y textos */
 .pie{
     background-image: linear-gradient(to right, violet,black);
 }
-img:hover {
-    transform: scale(1.2,1.4);  
+.apartado img:hover {
+    transform: scale(1.2,1.4); 
+    transition: all 2s; 
+}
+
+.cabecera__lista__item a:hover{
+    color: white;
+}
+.texto p:hover{
+    transition-property:all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.fotos img:hover{
+    transform: scale(1.2,1.4); 
+    transition: all 2s; 
+}
+
+.listado img:hover{
+    transform: scale(1.2,1.4); 
+    transition: all 2s; 
+}
+
+.segundaseccion img:hover{
+    transform: scale(1.2,1.4); 
+    transition: all 2s; 
 }
